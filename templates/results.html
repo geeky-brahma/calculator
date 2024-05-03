@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .result-container {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        #result {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h2>Calculator Result</h2>
+        <h3>You performed {{op}} of {{num_1}} & {{num_2}}</h3>
+        <h3>The result = {{score}} </h3>
+        <div id="result"></div>
+        <a href="/"><button>Go Back</button></a>
+    </div>
+
+</body>
+</html>
